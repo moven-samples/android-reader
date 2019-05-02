@@ -1,4 +1,4 @@
-package com.movencorp.movenietest;
+package com.movencorp.vindi;
 
 import org.junit.Test;
 

@@ -1,4 +1,4 @@
-package com.movencorp.movenietest;
+package com.movencorp.vindi;
 
 import android.content.ContentResolver;
 import android.content.ContentValues;
@@ -56,7 +56,7 @@ public class Moven extends AppCompatActivity {
     }
 
     private void doTest(View view) {
-        Uri uri = new Uri.Builder().scheme("content").authority("com.moven.cordova.sharedsecret.ietest.SharedSecretProvider").appendPath("MovenWellnessSettings").build();
+        Uri uri = new Uri.Builder().scheme("content").authority("com.moven.cordova.sharedsecret.bca.SharedSecretProvider").appendPath("MovenWellnessSettings").build();
         ContentResolver cr = getContentResolver();
         String value = getValue(cr, uri, "MovenToken");
         Snackbar.make(view, value == null ? "(null)" : value, Snackbar.LENGTH_LONG)
